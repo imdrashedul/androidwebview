@@ -12,7 +12,7 @@
         android:layout_height="match_parent">
     </com.webview.demo.Remote>
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabBack"
+        android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@android:drawable/ic_media_previous"
@@ -23,7 +23,7 @@
         app:fabSize="mini" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabForward"
+        android:id="@+id/forwardButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@android:drawable/ic_media_next"
@@ -33,7 +33,7 @@
         app:fabSize="mini" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabReload"
+        android:id="@+id/reload"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@android:drawable/ic_menu_rotate"
