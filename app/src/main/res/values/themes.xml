@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WebViewDemo" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#0866FE</item>
+        <item name="colorPrimaryDark">#0866FE</item>
+        <item name="colorAccent">#0866FE</item>
+        <item name="android:statusBarColor">#0866FE</item>
+    </style>
+
+    <style name="Base.Theme.WebViewDemo.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.WebViewDemo" parent="Base.Theme.WebViewDemo">
+        <item name="colorPrimary">#0866FE</item>
+        <item name="colorPrimaryDark">#0866FE</item>
+        <item name="colorAccent">#0866FE</item>
+        <item name="android:statusBarColor">#0866FE</item>
+    </style>
+
+</resources>
