@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         uiSettings.setJavaScriptEnabled(true);
         remoteUi.loadUrl(base);
         forwardButton=findViewById(R.id.forwardButton);
+        backButton=findVIewById(R.id.backButton);
+        reloadButton=findViewById(R.id.reloadButton);
         
         
     }
