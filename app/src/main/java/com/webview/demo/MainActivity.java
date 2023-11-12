@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private FloatingActionButton forwardButton;
     private FloatingActionButton backButton;
     private FloatingActionButton reloadButton;
-    private ValueCallBack<Uri[]> fileUploadCallBack;
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,33 @@ public class MainActivity extends AppCompatActivity {
         forwardButton=findViewById(R.id.forwardButton);
         backButton=findVIewById(R.id.backButton);
         reloadButton=findViewById(R.id.reloadButton);
-        
+
+        backButton.setOnClickListener(new View.OnClickListener()
+       {
+
+            public void onClick(View view)
+           {
+                if(remoteUi.canGoBack())
+                {
+                    remoteUi.goBack();
+                }
+            }
+        }
+        forwardButton.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View view){
+                if(remoteUi.canGoForward()){
+                    remoteUi.goForward();
+                }
+            }
+        }
+        reloadButton.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View view){
+                remoteUi.reload();
+            }
+        }                                 
+    
         
     }
 }
